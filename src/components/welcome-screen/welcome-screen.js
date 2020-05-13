@@ -13,7 +13,7 @@ const WelcomeScreen = () => {
         <div className="welcome-screen__catcher">
           <div className="welcome-screen__text-wrapper">
             <h1 className="welcome-screen__header">
-              Welcome to <span className="hignligth-color">Yogi`s</span> <br />
+              Welcome to <span className="highlight-color">Yogi`s</span> <br />
               <span className="welcome-screen__descr">Waffles and Grill</span>
             </h1>
             <p className="welcome-screen__text">
