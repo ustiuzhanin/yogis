@@ -531,6 +531,72 @@ input[type='radio'].visually-hidden {
   margin: 0 auto;
 }
 
+.contact-form {
+  padding-top: 80px;
+  padding-bottom: 160px;
+
+  text-align: center;
+}
+
+.contact-form__header {
+  margin-bottom: 5px;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+.contact-form__desc {
+  margin-top: 0;
+  margin-bottom: 130px;
+  font-family: 'Bringshoot';
+  font-size: 40px;
+  color: #84b6fb;
+}
+
+.contact-form__form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 645px;
+}
+
+.contact-form__input {
+  font-size: 23px;
+  margin-bottom: 20px;
+  padding: 15px;
+  padding-left: 50px;
+  font-family: inherit;
+
+  border: none;
+  border-bottom: 1px solid #84B6FB;
+
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 5px center;
+}
+
+.contact-form__input-name {
+  background-image: url('./icons/id.svg');
+}
+
+.contact-form__input-email {
+  background-image: url('./icons/email.svg');
+}
+
+.contact-form__textarea {
+  height: 52px;
+  min-height: 52px;
+  
+  resize: vertical;
+  background-image: url('./icons/message.svg');
+}
+
+.contact-form__btn {
+  align-self: flex-start;
+  margin-top: 70px;
+
+  border-radius: 10px;
+}
+
 @media (max-width: 1439px) {
   .welcome-screen__header {
     font-size: 45px;
@@ -579,6 +645,10 @@ input[type='radio'].visually-hidden {
     width: 150px;
 
     font-size: 26px;
+  }
+
+  .menu__header {
+    font-size: 45px;
   }
 
   .menu__category-img {

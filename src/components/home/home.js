@@ -4,6 +4,7 @@ import WelcomeScreen from "../welcome-screen/welcome-screen"
 import WhyUs from "../why-us/why-us"
 import Advantages from "../advantages/advantages"
 import MenuSection from "../menu-section/menu-section"
+import ContactForm from "../contact-form/contact-form"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <WhyUs />
         <Advantages />
         <MenuSection />
+        <ContactForm />
       </main>
     </section>
   )
