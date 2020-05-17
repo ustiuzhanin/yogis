@@ -89,7 +89,8 @@ img {
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -431,6 +432,7 @@ input[type='radio'].visually-hidden {
 
 .menu__category-item {
   margin-bottom: 40px;
+  padding-right: 20px;
 
   font-size: 25px;
   font-style: italic;
@@ -440,13 +442,14 @@ input[type='radio'].visually-hidden {
 .menu__category-link {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   color: #1a1c2d;
   text-decoration: none;
 }
 
 .menu__category-img {
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .menu__category-item:hover .menu__category-link {
@@ -546,7 +549,7 @@ input[type='radio'].visually-hidden {
 
 .contact-form__desc {
   margin-top: 0;
-  margin-bottom: 130px;
+  margin-bottom: 90px;
   font-family: 'Bringshoot';
   font-size: 40px;
   color: #84b6fb;
@@ -571,7 +574,7 @@ input[type='radio'].visually-hidden {
 
   background-repeat: no-repeat;
   background-size: 30px;
-  background-position: 5px center;
+  background-position: 5px 5px;
 }
 
 .contact-form__input-name {
@@ -585,15 +588,16 @@ input[type='radio'].visually-hidden {
 .contact-form__textarea {
   height: 52px;
   min-height: 52px;
-  
+
   resize: vertical;
   background-image: url('./icons/message.svg');
 }
 
 .contact-form__btn {
   align-self: flex-start;
-  margin-top: 70px;
+  margin-top: 30px;
 
+  font-family: 'SansSerifFLF';
   border-radius: 10px;
 }
 
@@ -663,11 +667,16 @@ input[type='radio'].visually-hidden {
     padding-right: 70px;
     font-size: 23px;
   }
+
+  .contact-form__header {
+    font-size: 45px;
+  }
 }
 
 @media (max-width: 1023px) {
   .wrapper {
-    padding: 0 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .header__img {
@@ -780,11 +789,20 @@ input[type='radio'].visually-hidden {
 
     font-size: 17px;
   }
+
+  .contact-form__form {
+    width: 520px;
+  }
+
+  .contact-form__input {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 767px) {
   .wrapper {
-    padding: 0 25px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   .btn {
@@ -975,5 +993,40 @@ input[type='radio'].visually-hidden {
 
   .menu__dish-list {
     display: none;
+  }
+
+  .contact-form__header {
+    font-size: 20px;
+  }
+
+  .contact-form__desc {
+    margin-bottom: 40px;
+    
+    font-size: 16px;
+  }
+
+  .contact-form__form {
+    min-width: 230px;
+    max-width: 440px;
+    width: auto;
+  }
+
+  .contact-form__input {
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 35px;
+
+    background-size: 20px;
+    /* background-position: 5px 4px; */
+  }
+
+  .contact-form__textarea {
+    height: 34px;
+    min-height: 34px;
+  }
+
+  .contact-form__btn {
+    align-self: center;
+    padding: 10px 25px;
   }
 }
