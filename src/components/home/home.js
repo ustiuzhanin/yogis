@@ -6,6 +6,7 @@ import Advantages from "../advantages/advantages"
 import MenuSection from "../menu-section/menu-section"
 import ContactForm from "../contact-form/contact-form"
 import Location from "../location/location"
+import Footer from "../footer/footer"
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <ContactForm />
         <Location />
       </main>
+      <Footer />
     </section>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Menu from "../menu/menu"
 
 import logo from "../../icons/logo.png"
 import { ReactComponent as Truck } from "../../icons/truck.svg"
@@ -33,37 +34,8 @@ const Header = () => {
             <span className="header__burger-line" />
             <span className="header__burger-line" />
           </button>
-          <ul
-            className={`header__list ${
-              isMenuOpen ? "header__list--open" : null
-            }`}
-          >
-            <li className="header__item">
-              <a className="header__link" href="/">
-                Home
-              </a>
-            </li>
-            <li className="header__item">
-              <a className="header__link" href="/">
-                Why Us?
-              </a>
-            </li>
-            <li className="header__item">
-              <a className="header__link" href="/">
-                Menu
-              </a>
-            </li>
-            <li className="header__item">
-              <a className="header__link" href="/">
-                Contact Us
-              </a>
-            </li>
-            <li className="header__item">
-              <a className="header__link" href="/">
-                Location
-              </a>
-            </li>
-          </ul>
+
+          <Menu isMenuOpen={isMenuOpen} type="header" />
         </nav>
         <a href="/" className="header__btn">
           <Truck className="header__icon" />
