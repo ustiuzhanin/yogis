@@ -27,9 +27,12 @@ const Header = () => {
         <nav className="header__nav">
           <button
             onClick={toggleIsMenuOpen}
-            className="header__burger-btn"
+            className={`header__burger-btn ${
+              isMenuOpen ? "header__burger-btn--close" : null
+            }`}
             type="button"
           >
+            <span className="header__burger-line" />
             <span className="header__burger-line" />
             <span className="header__burger-line" />
             <span className="header__burger-line" />

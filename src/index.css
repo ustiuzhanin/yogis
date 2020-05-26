@@ -1085,19 +1085,93 @@ input[type="radio"].visually-hidden {
 
     display: block;
     padding: 0;
+    width: 40px;
+    margin: 15px 0;
 
     border: 0;
     background-color: transparent;
   }
 
-  .header__burger-line {
+  /* .header__burger-line {
     display: block;
     width: 40px;
     margin: 6px;
     height: 2px;
 
     background-color: #38b179;
+  } */
+
+  .header__burger-line {
+
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    
+    
+    background: #38b179;
+    opacity: 1;
+    border-radius: 2px;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
   }
+
+
+  .header__burger-btn 
+  .header__burger-line:nth-child(1) {
+    top: 5px;
+  }
+
+  .header__burger-btn 
+  .header__burger-line:nth-child(2), .header__burger-btn 
+  .header__burger-line:nth-child(3) {
+    top: 14px;
+  }
+
+  .header__burger-btn 
+  .header__burger-line:nth-child(4) {
+    top: 22px;
+    }
+
+  .header__burger-btn--close 
+  .header__burger-line:nth-child(1) {
+    top: 14px;
+    width: 0%;
+    left: 50%;
+    }
+
+  .header__burger-btn--close 
+  .header__burger-line:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .header__burger-btn--close 
+  .header__burger-line:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .header__burger-btn--close 
+  .header__burger-line:nth-child(4) {
+    top: 14px;
+    width: 0%;
+    left: 50%;
+  }
+
+  /*  */
 
   .menu__list--header {
     position: fixed;
@@ -1113,8 +1187,12 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
   }
 
-  .header__list--open {
-    display: block;
+  .menu__list--open {
+    padding: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .menu-section__list--open {
