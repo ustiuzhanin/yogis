@@ -1,10 +1,12 @@
 import React from "react"
 
+import Advantages from "../advantages/advantages"
+
 import burgerImg from "../../images/burger.png"
 
 const WhyUs = () => {
   return (
-    <section className="why-us wrapper">
+    <section id="why-us" className="why-us wrapper">
       <h2 className="why-us__header">
         Why should you <span className="highlight-color">try?</span>
       </h2>
@@ -21,6 +23,7 @@ const WhyUs = () => {
           <li className="why-us__item">Fast delivery</li>
         </ul>
       </div>
+      <Advantages />
     </section>
   )
 }

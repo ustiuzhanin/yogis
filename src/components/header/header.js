@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import Menu from "../menu/menu"
 
 import logo from "../../icons/logo.png"
@@ -6,13 +6,19 @@ import { ReactComponent as Truck } from "../../icons/truck.svg"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [headerHeigth, setHeaderHigth] = useState(0)
+  const header = useRef(null)
+
+  useEffect(() => {
+    setHeaderHigth(header.current.clientHeight)
+  }, [])
 
   const toggleIsMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
   return (
-    <header className="header">
+    <header className="header" ref={header}>
       <div className="header__wrapper wrapper">
         <div className="header__img-wrapper">
           <img
@@ -38,7 +44,12 @@ const Header = () => {
             <span className="header__burger-line" />
           </button>
 
-          <Menu isMenuOpen={isMenuOpen} type="header" />
+          <Menu
+            isMenuOpen={isMenuOpen}
+            type="header"
+            closeMenu={toggleIsMenuOpen}
+            headerHeigth={headerHeigth}
+          />
         </nav>
         <a href="/" className="header__btn">
           <Truck className="header__icon" />

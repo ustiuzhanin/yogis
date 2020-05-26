@@ -2,7 +2,7 @@ import React from "react"
 
 const Location = () => {
   return (
-    <section className="location wrapper">
+    <section id="location" className="location wrapper">
       <h2 className="location__header">
         Our <span className="highlight-color">Location</span>
       </h2>
@@ -23,7 +23,7 @@ const Location = () => {
             Order yummy now!
           </a>
         </div>
-        <div className="map">
+        {/* <div className="map">
           <div className="map__wrapper">
             <iframe
               title="map"
@@ -36,7 +36,7 @@ const Location = () => {
               aria-hidden="false"
             />
           </div>{" "}
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -218,6 +218,10 @@ input[type="radio"].visually-hidden {
   color: #38b179;
 }
 
+.menu__link--active {
+  color: #38b179;
+}
+
 .header__btn {
   display: flex;
   align-items: center;
@@ -344,6 +348,7 @@ input[type="radio"].visually-hidden {
 .why-us__wrapper {
   display: flex;
   justify-content: center;
+  padding-bottom: 80px;
 }
 
 .why-us__img {
@@ -379,10 +384,6 @@ input[type="radio"].visually-hidden {
 
 .why-us__item:nth-child(2n)::before {
   content: ". . . . . . . . . . . . . ";
-}
-
-.advantages {
-  padding-bottom: 60px;
 }
 
 .advantages__list {
@@ -425,7 +426,7 @@ input[type="radio"].visually-hidden {
 .menu-section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .menu-section__header {

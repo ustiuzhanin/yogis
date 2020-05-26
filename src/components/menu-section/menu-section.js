@@ -4,7 +4,7 @@ import { ReactComponent as LocalsFavorite } from "../../icons/locals-favorite.sv
 
 const MenuSection = () => {
   return (
-    <section className="menu-section wrapper">
+    <section id="menu" className="menu-section wrapper">
       <h2 className="menu-section__header">
         Our <span className="highlight-color">Menu</span>
       </h2>

@@ -2,7 +2,7 @@ import React from "react"
 
 const Advantages = () => {
   return (
-    <section className="advantages wrapper">
+    <section className="advantages">
       <ul className="advantages__list">
         <li className="advantages__item">
           <span className="advantages__number">7</span>

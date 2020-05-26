@@ -6,7 +6,7 @@ import homePlate from "../../images/home-plate.png"
 
 const WelcomeScreen = () => {
   return (
-    <section className="welcome-screen">
+    <section id="home" className="welcome-screen">
       <div className="welcome-screen__wrapper wrapper">
         <AsideSocials />
 
