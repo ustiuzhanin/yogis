@@ -1,8 +1,40 @@
-import React from "react"
+import React, { useState } from "react"
 
-import { ReactComponent as LocalsFavorite } from "../../icons/locals-favorite.svg"
+import MenuSectionItem from "./menu-section-item/menu-section-item"
+import MenuSectionCaption from "./menu-section-caption/menu-section-caption"
+
+const menuData = {
+  breakfast: [
+    {
+      name: "Breakfast plate",
+      desc: "Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots",
+      price: "9.95",
+    },
+  ],
+  sandwiches: [
+    {
+      name: "Snadwitch",
+      desc: " Eggs, Sourdough Toast, Tater Tots",
+      price: "3.3",
+    },
+  ],
+  burgers: [
+    {
+      name: "burger",
+      desc: "Bacon or Ham, 2 Eggs,",
+      price: "19.95",
+    },
+  ],
+}
 
 const MenuSection = () => {
+  const [menuActive, setMenuActive] = useState("breakfast")
+
+  const onMenuCategoryClick = (evt) => {
+    evt.preventDefault()
+    setMenuActive(evt.currentTarget.id)
+  }
+
   return (
     <section id="menu" className="menu-section wrapper">
       <h2 className="menu-section__header">
@@ -11,150 +43,23 @@ const MenuSection = () => {
 
       <div className="menu-section__wrapper">
         <ul className="menu-section__category-list">
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
-          <li className="menu-section__category-item">
-            <a className="menu-section__category-link" href="/">
-              <LocalsFavorite className="menu-section__category-img" />
-              Local’s favorite
-            </a>
-          </li>
+          {Object.keys(menuData).map((title) => (
+            <MenuSectionCaption
+              key={Math.random()}
+              title={title}
+              onCaptionClick={onMenuCategoryClick}
+            />
+          ))}
         </ul>
         <ul className="menu-section__dish-list">
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast sandwich</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
-          <li className="menu-section__dish-item">
-            <b className="menu-section__dish-name">Breakfast plate</b>
-            <span className="menu-section__dots" />
-            <span className="menu-section__dish-price">9.95</span>
-            <p className="menu-section__dish-desc">
-              Bacon or Ham, 2 Eggs, Sourdough Toast, Tater Tots
-            </p>
-          </li>
+          {menuData[menuActive].map((item) => (
+            <MenuSectionItem
+              key={Math.random()}
+              name={item.name}
+              price={item.price}
+              desc={item.desc}
+            />
+          ))}
         </ul>
       </div>
       <a href="/" className="menu-section__btn btn">

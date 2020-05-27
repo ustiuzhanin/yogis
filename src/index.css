@@ -466,6 +466,7 @@ input[type="radio"].visually-hidden {
 
   color: #1a1c2d;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .menu-section__category-img {
