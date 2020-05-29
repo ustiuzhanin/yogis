@@ -14,9 +14,14 @@ const Menu = (props) => {
   return (
     <ul
       className={`menu menu__list--${type} ${
-        isMenuOpen ? "menu__list--open" : null
+        isMenuOpen && type === "header" && "menu__list--open"
       }`}
     >
+      {/* <ul
+      className={`menu menu__list--${type} ${
+        isMenuOpen ? "menu__list--open" : null
+      }`}
+    > */}
       <li className={`menu__item menu__item--${type}`}>
         <Link
           className={`menu__link menu__link--${type}`}

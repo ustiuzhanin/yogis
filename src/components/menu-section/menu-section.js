@@ -25,6 +25,48 @@ const menuData = {
       price: "19.95",
     },
   ],
+  waffles: [
+    {
+      name: "burger",
+      desc: "Bacon or Ham, 2 Eggs,",
+      price: "19.95",
+    },
+  ],
+  crepes: [
+    {
+      name: "burger",
+      desc: "Bacon or Ham, 2 Eggs,",
+      price: "19.95",
+    },
+  ],
+  soups: [
+    {
+      name: "burger",
+      desc: "Bacon or Ham, 2 Eggs,",
+      price: "19.95",
+    },
+  ],
+  salads: [
+    {
+      name: "burger",
+      desc: "Bacon or Ham, 2 Eggs,",
+      price: "19.95",
+    },
+  ],
+  kids: [
+    {
+      name: "burger",
+      desc: "Bacon or Ham, 2 Eggs,",
+      price: "19.95",
+    },
+  ],
+  appetizers: [
+    {
+      name: "burger",
+      desc: "Bacon or Ham, 2 Eggs,",
+      price: "19.95",
+    },
+  ],
 }
 
 const MenuSection = () => {
@@ -47,6 +89,7 @@ const MenuSection = () => {
             <MenuSectionCaption
               key={Math.random()}
               title={title}
+              isActive={menuActive === title}
               onCaptionClick={onMenuCategoryClick}
             />
           ))}
