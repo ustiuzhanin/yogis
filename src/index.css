@@ -121,6 +121,8 @@ input[type="radio"].visually-hidden {
 .menu__link {
   text-decoration: none;
   color: #1A1C2D;
+
+  cursor: pointer;
 }
 
 .socials__list {
@@ -321,8 +323,8 @@ input[type="radio"].visually-hidden {
 
 .why-us {
   text-align: center;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
   background: url("./icons/aprin.png") left top no-repeat,
     url("./icons/scoop.png") right bottom no-repeat;
@@ -427,6 +429,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   padding-bottom: 70px;
+  padding-top: 70px;
 }
 
 .menu-section__header {
@@ -564,8 +567,8 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-form {
-  padding-top: 80px;
-  padding-bottom: 160px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
   text-align: center;
 }
@@ -635,8 +638,8 @@ input[type="radio"].visually-hidden {
 }
 
 .location {
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
   text-align: center;
 }
@@ -708,7 +711,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
   background-color: #000000;
@@ -937,11 +940,6 @@ input[type="radio"].visually-hidden {
     width: 300px;
   }
 
-  .why-us {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
   .why-us__item {
     font-size: 24px;
   }
@@ -1018,7 +1016,6 @@ input[type="radio"].visually-hidden {
 
   .location__btn {
     align-self: flex-start;
-    margin-bottom: 50px;
     margin-right: 50%;
   }
 
@@ -1101,15 +1098,6 @@ input[type="radio"].visually-hidden {
     border: 0;
     background-color: transparent;
   }
-
-  /* .header__burger-line {
-    display: block;
-    width: 40px;
-    margin: 6px;
-    height: 2px;
-
-    background-color: #38b179;
-  } */
 
   .header__burger-line {
 

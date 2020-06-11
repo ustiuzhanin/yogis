@@ -23,7 +23,7 @@ const Location = () => {
             Order yummy now!
           </a>
         </div>
-        {/* <div className="map">
+        <div className="map">
           <div className="map__wrapper">
             <iframe
               title="map"
@@ -36,7 +36,7 @@ const Location = () => {
               aria-hidden="false"
             />
           </div>{" "}
-        </div> */}
+        </div>
       </div>
     </section>
   )

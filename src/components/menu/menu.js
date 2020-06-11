@@ -7,21 +7,12 @@ import PropTypes from "prop-types"
 const Menu = (props) => {
   const { isMenuOpen, type, closeMenu, headerHeigth } = props
 
-  const handleSetActive = () => {
-    // console.log(props.header)
-  }
-
   return (
     <ul
       className={`menu menu__list--${type} ${
         isMenuOpen && type === "header" && "menu__list--open"
       }`}
     >
-      {/* <ul
-      className={`menu menu__list--${type} ${
-        isMenuOpen ? "menu__list--open" : null
-      }`}
-    > */}
       <li className={`menu__item menu__item--${type}`}>
         <Link
           className={`menu__link menu__link--${type}`}
@@ -31,7 +22,6 @@ const Menu = (props) => {
           smooth
           offset={-headerHeigth}
           duration={500}
-          onSetActive={handleSetActive}
           onClick={closeMenu}
         >
           Home
@@ -46,7 +36,6 @@ const Menu = (props) => {
           smooth
           offset={-headerHeigth}
           duration={500}
-          onSetActive={handleSetActive}
           onClick={closeMenu}
         >
           Why Us?
@@ -61,7 +50,6 @@ const Menu = (props) => {
           smooth
           offset={-headerHeigth}
           duration={500}
-          onSetActive={handleSetActive}
           onClick={closeMenu}
         >
           Menu
@@ -76,7 +64,6 @@ const Menu = (props) => {
           smooth
           offset={-headerHeigth}
           duration={500}
-          onSetActive={handleSetActive}
           onClick={closeMenu}
         >
           Contact Us
@@ -91,7 +78,6 @@ const Menu = (props) => {
           smooth
           offset={-headerHeigth}
           duration={500}
-          onSetActive={handleSetActive}
           onClick={closeMenu}
         >
           Location
