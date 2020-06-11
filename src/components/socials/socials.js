@@ -1,5 +1,7 @@
 import React from "react"
 
+import PropTypes from "prop-types"
+
 import { ReactComponent as InstagramSvg } from "../../icons/instagram.svg"
 import { ReactComponent as FacebookSvg } from "../../icons/facebook.svg"
 import { ReactComponent as YelpSvg } from "../../icons/yelp.svg"
@@ -11,7 +13,7 @@ const Socials = (props) => {
     <ul className={`socials__list socials__list--${type}`}>
       <li className={`socials__item socials__item--${type}`}>
         <a
-          href="/"
+          href="https://www.tripadvisor.com/Restaurant_Review-g45399-d15696430-Reviews-Yogi_s_Waffles_Grill-West_Yellowstone_Montana.html"
           className={`socials__link socials__link--${type}`}
           aria-label="Read more about Seminole tax hike"
         >
@@ -26,7 +28,7 @@ const Socials = (props) => {
 
       <li className={`socials__item socials__item--${type}`}>
         <a
-          href="/"
+          href="https://www.yelp.com/biz/yogis-waffles-and-grill-west-yellowstone-2"
           className={`socials__link socials__link--${type}`}
           aria-label="Read more about Seminole tax hike"
         >
@@ -41,7 +43,7 @@ const Socials = (props) => {
 
       <li className={`socials__item socials__item--${type}`}>
         <a
-          href="/"
+          href="https://www.facebook.com/YogisWyellowstone"
           className={`socials__link socials__link--${type}`}
           aria-label="Read more about Seminole tax hike"
         >
@@ -56,7 +58,7 @@ const Socials = (props) => {
 
       <li className={`socials__item socials__item--${type}`}>
         <a
-          href="/"
+          href="https://www.instagram.com/yogiswaffles/"
           className={`socials__link socials__link--${type}`}
           aria-label="Read more about Seminole tax hike"
         >
@@ -70,6 +72,10 @@ const Socials = (props) => {
       </li>
     </ul>
   )
+}
+
+Socials.propTypes = {
+  type: PropTypes.string.isRequired,
 }
 
 export default Socials
