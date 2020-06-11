@@ -1249,6 +1249,10 @@ input[type="radio"].visually-hidden {
     background-size: 130px;
   }
 
+  .why-us__wrapper {
+    padding-bottom: 50px;
+  }
+
   .why-us__header {
     font-size: 20px;
   }
@@ -1275,10 +1279,6 @@ input[type="radio"].visually-hidden {
     font-size: 12px;
   }
 
-  .advantages {
-    padding-bottom: 30px;
-  }
-
   .advantages__item {
     margin: 10px;
     width: 100%;
@@ -1301,6 +1301,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 32px;
 
     font-size: 20px;
+  }
+
+  .menu-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .menu-section__wrapper {
@@ -1339,7 +1344,8 @@ input[type="radio"].visually-hidden {
   }
 
   .contact-form {
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .contact-form__header {
@@ -1375,6 +1381,11 @@ input[type="radio"].visually-hidden {
   .contact-form__btn {
     align-self: center;
     padding: 10px 25px;
+  }
+
+  .location {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .location__wrapper {
@@ -1414,6 +1425,11 @@ input[type="radio"].visually-hidden {
 
   .location__btn {
     margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .map {
+    margin-bottom: 0;
   }
 
   .footer__wrapper {
