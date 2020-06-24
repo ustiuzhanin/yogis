@@ -20,7 +20,12 @@ const WelcomeScreen = () => {
               We are the best quality and traditional restaurant in West
               Yellowstone.
             </p>
-            <a href="/" className="welcome-screen__btn btn">
+            <a
+              href="https://order.menudrive.com/yogiswafflesandgrill"
+              className="welcome-screen__btn btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Order Yummy Now!
             </a>
           </div>

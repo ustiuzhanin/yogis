@@ -15,6 +15,8 @@ const Socials = (props) => {
         <a
           href="https://www.tripadvisor.com/Restaurant_Review-g45399-d15696430-Reviews-Yogi_s_Waffles_Grill-West_Yellowstone_Montana.html"
           className={`socials__link socials__link--${type}`}
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Read more about Seminole tax hike"
         >
           <span className="visually-hidden">Tripadvisor</span>
@@ -31,6 +33,8 @@ const Socials = (props) => {
           href="https://www.yelp.com/biz/yogis-waffles-and-grill-west-yellowstone-2"
           className={`socials__link socials__link--${type}`}
           aria-label="Read more about Seminole tax hike"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="visually-hidden">Yelp</span>
           <YelpSvg
@@ -46,6 +50,8 @@ const Socials = (props) => {
           href="https://www.facebook.com/YogisWyellowstone"
           className={`socials__link socials__link--${type}`}
           aria-label="Read more about Seminole tax hike"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="visually-hidden">Facebook</span>
           <FacebookSvg
@@ -61,6 +67,8 @@ const Socials = (props) => {
           href="https://www.instagram.com/yogiswaffles/"
           className={`socials__link socials__link--${type}`}
           aria-label="Read more about Seminole tax hike"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="visually-hidden">Instagram</span>
           <InstagramSvg

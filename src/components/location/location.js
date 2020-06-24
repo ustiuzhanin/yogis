@@ -19,7 +19,12 @@ const Location = () => {
             7 days a week <br />
             11 am — 8 pm
           </p>
-          <a href="/" className="location__btn btn">
+          <a
+            href="https://order.menudrive.com/yogiswafflesandgrill"
+            className="location__btn btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Order yummy now!
           </a>
         </div>
