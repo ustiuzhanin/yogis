@@ -20,7 +20,7 @@ const WhyUs = () => {
 
           <li className="why-us__item">Healthy options</li>
 
-          <li className="why-us__item">Fast delivery</li>
+          {/* <li className="why-us__item">Fast delivery</li> */}
         </ul>
       </div>
       <Advantages />

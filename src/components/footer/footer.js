@@ -31,9 +31,13 @@ const Footer = () => {
           <h3 className="footer__header">Contact Us</h3>
           <ul className="footer__list">
             <li className="footer__item">
-              <a className="footer__link" href="tel:14066402126">
+              <a className="footer__link footer__phone" href="tel:14066402126">
                 <PhoneSvg className="footer__icon" />
                 +1 406 640 21 26
+              </a>
+              <a className="footer__link footer__phone" href="tel:14065398168">
+                <PhoneSvg className="footer__icon" />
+                +1 406 539 81 68
               </a>
             </li>
             <li className="footer__item">

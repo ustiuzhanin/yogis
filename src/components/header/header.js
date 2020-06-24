@@ -51,7 +51,8 @@ const Header = () => {
             headerHeigth={headerHeigth}
           />
         </nav>
-        <a
+
+        {/* <a
           href="https://order.menudrive.com/yogiswafflesandgrill"
           className="header__btn"
           target="_blank"
@@ -59,7 +60,7 @@ const Header = () => {
         >
           <Truck className="header__icon" />
           Delivery
-        </a>
+        </a> */}
       </div>
     </header>
   )

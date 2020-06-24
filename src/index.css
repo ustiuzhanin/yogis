@@ -766,6 +766,11 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
+.footer__phone {
+  margin-bottom: 14px;
+  display: block;
+}
+
 .footer__icon {
   width: 20px;
   height: 20px;
@@ -1336,7 +1341,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     /* justify-content: center; */
 
-    font-size: 14px;
+    font-size: 18px;
     color: #989898;
   }
 
