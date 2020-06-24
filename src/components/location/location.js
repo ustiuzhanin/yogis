@@ -17,7 +17,7 @@ const Location = () => {
           </p>
           <p className="location__hours">
             7 days a week <br />
-            11 am — 8 pm
+            11 am — 10 pm
           </p>
           <a
             href="https://order.menudrive.com/yogiswafflesandgrill"
