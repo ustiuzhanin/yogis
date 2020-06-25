@@ -18,12 +18,14 @@ const ContactForm = () => {
           type="text"
           placeholder="Your Name (Required)"
           name="name"
+          required
         />
         <input
           className="contact-form__input contact-form__input-email"
           type="email"
           placeholder="Your Email (Required)"
           name="email"
+          required
         />
         <textarea
           className="contact-form__input contact-form__textarea"

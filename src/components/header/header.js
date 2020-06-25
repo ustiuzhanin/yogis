@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from "react"
 import Menu from "../menu/menu"
 
 import logo from "../../icons/logo.png"
-import { ReactComponent as Truck } from "../../icons/truck.svg"
+// import { ReactComponent as Truck } from "../../icons/truck.svg"
+import { ReactComponent as MenuSvg } from "../../icons/order.svg"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -61,6 +62,16 @@ const Header = () => {
           <Truck className="header__icon" />
           Delivery
         </a> */}
+        <a
+          href="https://order.menudrive.com/yogiswafflesandgrill"
+          className="header__btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {/* <Truck className="header__icon" /> */}
+          <MenuSvg className="header__icon" />
+          Order Now!
+        </a>
       </div>
     </header>
   )

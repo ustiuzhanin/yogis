@@ -2,28 +2,44 @@ import React, { useState } from "react"
 
 import MenuSectionItem from "./menu-section-item/menu-section-item"
 import MenuSectionCaption from "./menu-section-caption/menu-section-caption"
+import { ReactComponent as Swipe } from "../../icons/swipe.svg"
 
 const menuData = {
   breakfast: [
     {
       name: "Breakfast plate",
-      desc: "",
+      desc: "bacon or ham, 2 eggs, sourdough toast, tatet tots",
       price: "9.95",
     },
     {
       name: "Breakfast Crepe",
-      desc: "",
+      desc: "bacon or ham, 2 eggs & cheddar cheese",
       price: "10.95",
     },
     {
       name: "Breakfast Sandwich",
-      desc: "",
+      desc: "sourdough bread, bacon or ham, 2eggs & cheddar cheese",
       price: "7.95",
     },
     {
       name: "Breakfast Waffle",
-      desc: "",
+      desc: "bacon or ham, 2 eggs & cheddar cheese",
       price: "10.95",
+    },
+    {
+      name: "Pesto Tomato Egg Sandwich",
+      desc: "sourdough bread, 2 eggs, mozzarella, tomatoes & pesto",
+      price: "7.95",
+    },
+    {
+      name: "Plain Crepe",
+      desc: "sugar powder & maple syrop",
+      price: "7.95",
+    },
+    {
+      name: "Plain Waffle",
+      desc: "sugar powder & maple syrop",
+      price: "7.95",
     },
     {
       name: "Oatmeal",
@@ -44,21 +60,6 @@ const menuData = {
       name: "Peanut Butter & Jam Waffle",
       desc: "",
       price: "9.95",
-    },
-    {
-      name: "Pesto Tomato Egg Sandwich",
-      desc: "",
-      price: "7.95",
-    },
-    {
-      name: "Plain Crepe",
-      desc: "",
-      price: "7.95",
-    },
-    {
-      name: "Plain Waffle",
-      desc: "",
-      price: "7.95",
     },
   ],
   sandwiches: [
@@ -117,17 +118,18 @@ const menuData = {
     },
     {
       name: "Pesto Tomato Egg Sandwich",
-      desc: "",
+      desc: "sourdough bread, 2 eggs, mozzarella, tomatoes & pesto",
       price: "8.95",
     },
     {
       name: "Corned Beef Grilled Cheese Sandwich",
-      desc: "",
+      desc:
+        "whole wheat bread, corned beef, swiss cheese, lettuce, pickles & mustard",
       price: "10.95",
     },
     {
       name: "Turkey Bacon Blue Cheese Sandwich",
-      desc: "",
+      desc: "sourdough bread, turkey, bacon & blue cheese",
       price: "11.95",
     },
   ],
@@ -473,6 +475,11 @@ const MenuSection = () => {
             />
           ))}
         </ul>
+
+        <span className="menu-section__swipe">
+          Swipe for more! <Swipe />
+        </span>
+
         <ul className="menu-section__dish-list">
           {menuData[menuActive].map((item) => (
             <MenuSectionItem
