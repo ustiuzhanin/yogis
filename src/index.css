@@ -791,6 +791,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   font-size: 14px;
   opacity: 0.6;
+  line-height: 16px;
 }
 
 .socials__list--footer {
@@ -838,7 +839,7 @@ input[type="radio"].visually-hidden {
   }
 
   .why-us__img {
-    width: 35%;
+    width: 30%;
   }
 
   .why-us__item {
@@ -962,6 +963,10 @@ input[type="radio"].visually-hidden {
     z-index: -1;
     bottom: 40px;
     width: 300px;
+  }
+
+  .why-us__img {
+    max-width: 35%;
   }
 
   .why-us__item {

@@ -167,7 +167,7 @@ const menuData = {
     },
     {
       name: "Jalapeno Jack",
-      desc: "jalapenos & pepper jack",
+      desc: "ciabatta bun, jalapenos & pepper jack",
       price: "11.95",
     },
     {
@@ -401,7 +401,7 @@ const menuData = {
   ],
   kids: [
     {
-      name: "KIDS Hamburger & Fires",
+      name: "KIDS Hamburger & Fries",
       desc: "",
       price: "6.95",
     },

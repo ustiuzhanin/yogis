@@ -31,10 +31,6 @@ const Footer = () => {
           <h3 className="footer__header">Contact Us</h3>
           <ul className="footer__list">
             <li className="footer__item">
-              <a className="footer__link footer__phone" href="tel:14066402126">
-                <PhoneSvg className="footer__icon" />
-                +1 406 640 21 26
-              </a>
               <a className="footer__link footer__phone" href="tel:14065398168">
                 <PhoneSvg className="footer__icon" />
                 +1 406 539 81 68
@@ -56,7 +52,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className="footer__rights">© Taste 2018. All Rights Reserved.</p>
+      <p className="footer__rights">
+        © Yogi's Waffles & Grill 2020. <br /> All Rights Reserved.
+      </p>
     </footer>
   )
 }

@@ -2,7 +2,7 @@ import React from "react"
 
 import AsideSocials from "../aside-socials/aside-socials"
 
-import homePlate from "../../images/home-plate1.png"
+import homePlate from "../../images/home-plate.png"
 
 const WelcomeScreen = () => {
   return (
